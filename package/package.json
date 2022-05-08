@@ -15,5 +15,7 @@
     "url": "git+https://github.com/liming-xxw/icon.js.git"
   },
   "author": "cainxxw",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+  }
 }

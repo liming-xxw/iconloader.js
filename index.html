@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>icon.js</title>
-    <link rel="stylesheet" href="./css/common.css"></link>
-    <link rel="stylesheet" href="./css/good.css"></link>
+    <link rel="stylesheet" href="./dist/css/main.css"></link>
     
     <style>
         .icn{
@@ -24,8 +23,8 @@
     
 </body>
 <script type="module">
-    import Icon from './dist/icon.js'
-
-     let cons = new Icon({icon:'good'})
+    const odiv = document.querySelector('.icn')
+    import  Icon from './main.js'
+    let cons = Icon(odiv,{icon:'good',type:"rotate",width:"20",height:"20"})
 </script>
 </html>
