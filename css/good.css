@@ -1,14 +1,48 @@
-.icongood {
-    animation: .3s good forwards;
-
+.iconscale {
+    animation: .3s scale forwards;
 }
 
-@keyframes good {
+@keyframes scale {
     0% {
         transform: scale(0);
     }
 
     100% {
         transform: scale(1);
+    }
+}
+
+.iconrotate {
+    animation: .3s rotate forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+.iconchange {
+    animation: .2s change forwards;
+}
+
+@keyframes change {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+
+    }
+
+    100% {
+        transform: scale(1);
+
     }
 }

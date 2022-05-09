@@ -1,34 +1,12 @@
 {
   "name": "icon",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cross-env NODE_ENV=development webpack  --config webpack.config.js",
-    "dev": "cross-env NODE_ENV=development webpack serve --config"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/liming-xxw/icon.js.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/liming-xxw/icon.js/issues"
-  },
-  "homepage": "https://github.com/liming-xxw/icon.js#readme",
   "devDependencies": {
-    "clean-webpack-plugin": "^4.0.0",
-    "cross-env": "^7.0.3",
-    "css-loader": "^6.7.1",
-    "mini-css-extract-plugin": "^2.6.0",
-    "style-loader": "^3.3.1",
-    "ts-loader": "^9.3.0",
-    "typescript": "^4.6.4",
-    "webpack": "^5.72.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.9.0"
+    "vite": "^2.9.8"
   }
 }
