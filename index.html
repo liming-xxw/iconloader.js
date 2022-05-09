@@ -5,20 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>icon.js</title>
+    <link rel="stylesheet" href="./dist/style.css"></link>
   </head>
   <body>
     icon.js
     <div class="icn"></div>
+    <div class="icn1"></div>
+    <div class="icn2"></div>
   </body>
-  <script type="module" src="/main.ts"></script>
+  <script src="./dist/iconloader.js.umd.js"></script>
   <script type="module">
-    const odiv = document.querySelector(".icn");
-    import Icon from "./main.ts";
-    let cons = Icon(odiv, {
-      icon: "good",
+  </script>
+  <script>
+    const odiv1 = document.querySelector(".icn1");
+    let consx = iconloader(odiv1, {
+      icon: "menu",
       type: "rotate",
-      width: "20",
-      height: "20",
+      width: 40,
+      height: 40,
     });
   </script>
+  <!-- <script type="module">
+    const odiv = document.querySelector(".icn");
+    import "./dist/style.css";
+    // import Icon from "./dist/iconloader.js.es.js";
+    const Icon = require("./dist/iconloader.js.umd.js");
+    let cons = Icon(odiv, {
+      icon: "menu",
+      type: "rotate",
+      width: 40,
+      height: 40,
+    });
+
+    const odiv2 = document.querySelector(".icn2");
+    let consc = Icon(odiv2, {
+      icon: "good",
+      type: "rotate",
+      width: 40,
+      height: 40,
+    });
+  </script> -->
 </html>

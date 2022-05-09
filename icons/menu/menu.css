@@ -1,0 +1,31 @@
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+    
+.menuline {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #000;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.iconmenu .menutop {
+    stroke-dasharray: 40 139;
+}
+
+.iconmenu .menubottom {
+    stroke-dasharray: 40 180;
+}
+
+.iconmenu.active .menutop {
+    stroke-dashoffset: -98px;
+}
+
+.iconmenu.active .menubottom {
+    stroke-dashoffset: -138px;
+}

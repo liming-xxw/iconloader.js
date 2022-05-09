@@ -17,6 +17,7 @@ export const good = (dom: HTMLHRElement, options: options) => {
   svg = CreateNsDom("svg", {
     width: width + "px",
     height: height + "px",
+    viewbox: "0 0 1024 1024",
   });
   svg.onclick = () => {
     if (type == "scale") {
